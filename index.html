@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Comercio Electrónico</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Comercio Electrónico</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link" data-seccion="inicio">Inicio</a></li>
+                <li><a href="#" class="nav-link" data-seccion="unidad1">Unidad 1</a></li>
+                <li><a href="#" class="nav-link" data-seccion="unidad2">Unidad 2</a></li>
+                <li><a href="#" class="nav-link" data-seccion="unidad3">Unidad 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO -->
+        <section id="inicio" class="activo">
+            <h2>Bienvenida</h2>
+            <p>Bienvenido al curso de <strong>Comercio Electrónico</strong>. En este espacio aprenderás los fundamentos, infraestructura y modalidades de los negocios digitales.</p>
+            <img src="CE.jpg" alt="Comercio electrónico" width="400">
+        </section>
+
+        <!-- UNIDAD 1 -->
+        <section id="unidad1" class="oculto">
+            <h2>Unidad 1: Introducción al Comercio Electrónico</h2>
+            <p>En esta unidad conocerás los conceptos básicos, ventajas y evolución del comercio electrónico.</p>
+            <video controls width="400">
+                <source src="Comercioelectronico.webm" type="video/webm">
+                Tu navegador no soporta el video.
+            </video>
+            <button class="boton-actividad" data-unidad="1">Actividad Unidad 1</button>
+        </section>
+
+        <!-- UNIDAD 2 -->
+        <section id="unidad2" class="oculto">
+            <h2>Unidad 2: Infraestructura de Redes en los Negocios</h2>
+            <p>Comprende los elementos tecnológicos que permiten realizar transacciones electrónicas seguras.</p>
+            <video controls width="400">
+                <source src="Infraestructura.mp4" type="video/mp4">
+                Tu navegador no soporta el audio.
+            </video>
+            <button class="boton-actividad" data-unidad="2">Actividad Unidad 2</button>
+        </section>
+
+        <!-- UNIDAD 3 -->
+        <section id="unidad3" class="oculto">
+            <h2>Unidad 3: Modalidades de Comercio Electrónico</h2>
+            <p>Explora las diferentes modalidades del comercio electrónico, como B2B, B2C y C2C.</p>
+            <img src="Modalidades.jpg" alt="Modalidades" width="400">
+            <button class="boton-actividad" data-unidad="3">Actividad Unidad 3</button>
+        </section>
+    </main>
+
+    <!-- SECCIÓN DE ACTIVIDAD -->
+    <div id="actividad" class="oculto">
+        <h3>Actividad Interactiva</h3>
+        <p id="pregunta"></p>
+        <div id="opciones"></div>
+        <button id="cerrar">Cerrar actividad</button>
+    </div>
+
+    <footer>
+        <p>© 2025 - Curso de Comercio Electrónico | Licenciatura en Tecnología Educativa</p>
+    </footer>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
